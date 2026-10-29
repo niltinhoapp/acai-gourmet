@@ -2289,40 +2289,76 @@ footer {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .hero-section {
     min-height: 85vh;
-    padding: 70px 0 60px;
+    padding: 80px 0 65px;
   }
   .hero-title {
-    font-size: 2.1rem;
+    font-size: clamp(2.1rem, 6.8vw, 2.9rem);
   }
   .hero-description {
-    font-size: 1.02rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-bottom: 26px;
   }
   .hero-cta-buttons {
     flex-direction: column;
     width: 100%;
     max-width: 360px;
+    margin: 0 auto 30px;
+  }
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    min-height: 82vh;
+    padding: 65px 0 55px;
+  }
+  .hero-tag {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+  .hero-title {
+    font-size: clamp(1.9rem, 7.5vw, 2.4rem);
+    margin-bottom: 18px;
+  }
+  .hero-description {
+    font-size: 0.98rem;
+    margin-bottom: 22px;
+  }
+  .hero-badges-row {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .hero-pill {
+    font-size: 0.78rem;
+    padding: 7px 12px;
   }
   .hero-trust-bar {
     flex-direction: column;
-    gap: 8px;
-    padding: 12px 18px;
+    gap: 6px;
+    padding: 10px 16px;
     border-radius: var(--radius-md);
+    font-size: 0.8rem;
+    max-width: 340px;
   }
   .hero-trust-bar .trust-bar-separator {
     display: none;
   }
-  .btn-primary, .btn-secondary {
-    width: 100%;
-    justify-content: center;
-  }
   .customizer-steps-container {
-    padding: 20px 16px;
+    padding: 20px 14px;
   }
   .sizes-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
   }
   .bases-grid {
     grid-template-columns: 1fr;
@@ -2331,27 +2367,56 @@ footer {
     max-width: 100%;
   }
   .top-notice-bar {
-    font-size: 0.74rem;
-    gap: 10px;
-    padding: 6px 12px;
+    font-size: 0.72rem;
+    gap: 8px;
+    padding: 6px 10px;
   }
   .top-notice-separator {
     display: none;
   }
   .floating-whatsapp-btn {
-    bottom: 20px;
-    right: 20px;
+    bottom: 18px;
+    right: 16px;
   }
   .whatsapp-btn-icon {
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
   }
   .whatsapp-btn-icon svg {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
   }
   .whatsapp-btn-tooltip {
     display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .brand-logo-svg {
+    height: 38px;
+    max-width: 170px;
+  }
+  .cart-btn-text {
+    display: none;
+  }
+  .btn-open-cart {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .header-cart-total {
+    font-size: 0.78rem;
+    padding: 2px 6px;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .ingredients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .ingredient-card {
+    padding: 16px 10px;
   }
 }
 
