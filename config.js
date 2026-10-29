@@ -40,6 +40,12 @@ const STORE_CONFIG = {
   extraToppingPrice: 2.00,
   extraSyrupPrice: 2.00,
 
+  // Vídeos Premium em Loop (Efeito GIF contínuo)
+  videos: {
+    heroLoop: "public/videos/hero-acai-loop.mp4",
+    heroFull: "public/videos/hero-acai-smoothie.mp4"
+  },
+
   // Centralização de Imagens (Nano Banana)
   images: {
     logo: "public/images/logo.svg",

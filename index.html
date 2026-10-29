@@ -164,28 +164,46 @@
           </div>
         </div>
 
-        <!-- Coluna Visual Fotográfica com Showcase Interativo -->
+        <!-- Coluna Visual com Showcase em Vídeo Loop (Efeito GIF) -->
         <div class="hero-visual animate-hero hero-delay-3">
           <div class="hero-image-card">
-            <picture>
-              <source media="(max-width: 768px)" srcset="public/images/hero-acai-mobile.webp">
-              <source media="(min-width: 769px)" srcset="public/images/hero-acai-desktop.webp">
-              <img src="public/images/hero-acai-desktop.webp" 
-                   alt="Tigela Gourmet de Açaí com Frutas Frescas e Complementos" 
-                   class="hero-main-img" 
-                   loading="eager"
-                   onerror="handleNanoImageFallback(this, 'public/images/hero-acai-desktop.webp', 'assets/img/hero-acai-bowl.jpg', 'Hero Açaí')">
-            </picture>
+            <!-- Vídeo Dinâmico em Loop Automático (Estilo GIF de Alta Qualidade) -->
+            <video 
+              id="heroVideo"
+              class="hero-main-video" 
+              autoplay 
+              muted 
+              loop 
+              playsinline 
+              webkit-playsinline
+              disablepictureinpicture
+              disableremoteplayback
+              poster="public/images/hero-acai-desktop.webp"
+              preload="auto"
+              aria-label="Açaí smoothie cremoso servido em mesa de madeira">
+              <source src="public/videos/hero-acai-loop.mp4" type="video/mp4">
+              <source src="public/videos/hero-acai-smoothie.mp4" type="video/mp4">
+              <!-- Fallback em imagem caso o navegador não reproduza vídeo -->
+              <picture>
+                <source media="(max-width: 768px)" srcset="public/images/hero-acai-mobile.webp">
+                <source media="(min-width: 769px)" srcset="public/images/hero-acai-desktop.webp">
+                <img src="public/images/hero-acai-desktop.webp" 
+                     alt="Tigela Gourmet de Açaí com Frutas Frescas e Complementos" 
+                     class="hero-main-img" 
+                     loading="eager"
+                     onerror="handleNanoImageFallback(this, 'public/images/hero-acai-desktop.webp', 'assets/img/hero-acai-bowl.jpg', 'Hero Açaí')">
+              </picture>
+            </video>
             <div class="hero-image-overlay" aria-hidden="true"></div>
             
             <div class="hero-floating-badge">
               <span class="sparkle-icon" aria-hidden="true">✦</span>
-              <span>Tigela Vulcão Especial</span>
+              <span>Açaí Cremoso Batido na Hora</span>
             </div>
 
             <div class="hero-image-caption">
-              <strong>Açaí Artesanal com Frutas Nobres</strong>
-              <span>Morangos frescos, banana fatiada, leite ninho e fios dourados de leite condensado</span>
+              <strong>Açaí Artesanal 100% Puro do Pará</strong>
+              <span>Textura aveludada, ultra cremoso e servido com frutas nobres e complementos</span>
             </div>
           </div>
 

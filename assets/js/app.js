@@ -199,7 +199,45 @@ document.addEventListener("DOMContentLoaded", () => {
   setupEventListeners();
   setupScrollAnimations();
   setupStickyHeader();
+  setupHeroVideo();
 });
+
+// Otimização e Controle do Vídeo Hero em Loop (Efeito GIF Suave)
+function setupHeroVideo() {
+  const video = document.getElementById("heroVideo");
+  if (!video) return;
+
+  const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (mediaQuery.matches) {
+    video.pause();
+    return;
+  }
+
+  const playPromise = video.play();
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      // Fallback gracioso para poster caso o navegador bloqueie
+    });
+  }
+
+  // Pausa o vídeo quando o usuário rola para longe para economizar CPU e bateria
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (!mediaQuery.matches && video.paused) {
+            video.play().catch(() => {});
+          }
+        } else {
+          if (!video.paused) {
+            video.pause();
+          }
+        }
+      });
+    }, { threshold: 0.15 });
+    videoObserver.observe(video);
+  }
+}
 
 // Animação de Entrada e Scroll Reveal via IntersectionObserver
 function setupScrollAnimations() {
