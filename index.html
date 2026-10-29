@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Açaí Tropical Gourmet — O Açaí Mais Cremoso da Cidade</title>
+  <meta name="description" content="Peça o melhor açaí artesanal da cidade: 100% puro do Pará, ultra cremoso, monte do seu jeito com mais de 25 complementos frescos e entrega rápida via WhatsApp.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="public/images/logo.svg" type="image/svg+xml">
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Principais -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Elementos Decorativos Tropicais Sutis em Segundo Plano (CSS Puro) -->
+  <div class="tropical-ambient-glow" aria-hidden="true">
+    <div class="ambient-circle ambient-1"></div>
+    <div class="ambient-circle ambient-2"></div>
+    <div class="ambient-circle ambient-3"></div>
+  </div>
+
+  <!-- Barra de Aviso Superior / Status Ao Vivo -->
+  <aside class="top-notice-bar" aria-label="Informações de funcionamento">
+    <div class="top-notice-item">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span><strong>Aberto para pedidos agora</strong></span>
+    </div>
+    <div class="top-notice-separator" aria-hidden="true">•</div>
+    <div class="top-notice-item">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span>Entrega média: <strong>25 a 40 min</strong></span>
+    </div>
+    <div class="top-notice-separator" aria-hidden="true">•</div>
+    <div class="top-notice-item">
+      <span class="badge-free-shipping">🎉 Frete Grátis acima de R$ 45,00</span>
+    </div>
+  </aside>
+
+  <!-- Header / Barra de Navegação Fixa -->
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="brand-logo-link" aria-label="Açaí Tropical Gourmet - Início">
+        <!-- Logotipo Oficial em SVG Inline de Alta Fidelidade (Zero risco de imagem quebrada) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" class="brand-logo-svg" role="img" aria-label="Açaí Tropical Gourmet">
+          <defs>
+            <linearGradient id="purpleGradHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#a855f7"/>
+              <stop offset="50%" stop-color="#7c3aed"/>
+              <stop offset="100%" stop-color="#4c1d95"/>
+            </linearGradient>
+            <linearGradient id="berryGradHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f43f5e"/>
+              <stop offset="100%" stop-color="#be123c"/>
+            </linearGradient>
+            <linearGradient id="goldGradHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fde047"/>
+              <stop offset="100%" stop-color="#eab308"/>
+            </linearGradient>
+            <filter id="glowHeader" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+          <g transform="translate(10, 10)">
+            <path d="M 12 45 Q 40 85 68 45 Z" fill="url(#purpleGradHeader)" stroke="#c084fc" stroke-width="2"/>
+            <ellipse cx="40" cy="45" rx="28" ry="10" fill="#2e1065"/>
+            <ellipse cx="40" cy="44" rx="24" ry="7" fill="url(#purpleGradHeader)"/>
+            <circle cx="32" cy="40" r="7" fill="#3b0764" stroke="#a855f7" stroke-width="1.5"/>
+            <circle cx="48" cy="41" r="6" fill="#4a044e" stroke="#f43f5e" stroke-width="1.5"/>
+            <circle cx="41" cy="34" r="5.5" fill="url(#berryGradHeader)"/>
+            <path d="M 40 28 C 45 15, 62 10, 70 8 C 65 18, 55 24, 42 27 Z" fill="#10b981"/>
+            <path d="M 40 28 C 48 20, 60 18, 68 18" stroke="#34d399" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M 20 25 L 22 18 L 29 20 L 22 22 Z" fill="url(#goldGradHeader)" filter="url(#glowHeader)"/>
+            <circle cx="62" cy="48" r="2.5" fill="#fde047"/>
+          </g>
+          <text x="100" y="52" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="34" fill="#ffffff" letter-spacing="-0.5">
+            AÇAÍ <tspan fill="url(#goldGradHeader)">TROPICAL</tspan>
+          </text>
+          <text x="102" y="76" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="12" fill="#c084fc" letter-spacing="3.5">
+            GOURMET &bull; 100% PURO DO PARÁ
+          </text>
+        </svg>
+      </a>
+
+      <!-- Menu de Navegação Rápida (Desktop) -->
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#monte" class="nav-link">Monte Seu Açaí</a>
+        <a href="#combos" class="nav-link">Combos do Chefe</a>
+        <a href="#ingredientes" class="nav-link">Ingredientes</a>
+        <a href="#bebidas" class="nav-link">Bebidas</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Ações do Header -->
+      <div class="header-actions">
+        <span class="status-badge" title="Horário: 12h às 23h30">
+          <span class="live-dot" aria-hidden="true"></span> Loja Aberta
+        </span>
+
+        <button type="button" class="btn-open-cart" onclick="openCartDrawer()" aria-label="Abrir meu pedido">
+          <div class="cart-btn-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="cart-count-badge" aria-live="polite">0</span>
+          </div>
+          <span class="cart-btn-text">Meu Pedido</span>
+          <span class="header-cart-total" id="headerCartTotalPreview">R$ 0,00</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section / Apresentação de Alto Impacto -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <!-- Coluna de Conteúdo Hero -->
+        <div class="hero-content">
+          <div class="hero-tag animate-hero hero-delay-1">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>100% Polpa Pura do Pará &bull; Textura Aveludada</span>
+          </div>
+
+          <h1 class="hero-title animate-hero hero-delay-2">
+            O Açaí Mais Cremoso da Cidade. <span>Do Seu Jeito, no Seu Tempo.</span>
+          </h1>
+
+          <p class="hero-description animate-hero hero-delay-3">
+            Açaí artesanal batido na hora, consistência ultra aveludada sem cristais de gelo e mais de 25 complementos frescos selecionados. Monte o seu copo com frutas fatiadas na hora ou escolha nossas tigelas clássicas.
+          </p>
+
+          <div class="hero-badges-row animate-hero hero-delay-4">
+            <div class="hero-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Zero Conservantes</span>
+            </div>
+            <div class="hero-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <span>Frutas Frescas Selecionadas</span>
+            </div>
+            <div class="hero-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Entrega Rápida 25-40 min</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-buttons animate-hero hero-delay-5">
+            <a href="#monte" class="btn-primary cta-shine">
+              <span>🍧 Monte Seu Açaí Agora</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="#combos" class="btn-secondary">
+              <span>Ver Combos Prontos</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Visual Fotográfica com Showcase Interativo -->
+        <div class="hero-visual animate-hero hero-delay-3">
+          <div class="hero-image-card">
+            <picture>
+              <source media="(max-width: 768px)" srcset="public/images/hero-acai-mobile.webp">
+              <source media="(min-width: 769px)" srcset="public/images/hero-acai-desktop.webp">
+              <img src="public/images/hero-acai-desktop.webp" 
+                   alt="Tigela Gourmet de Açaí com Frutas Frescas e Complementos" 
+                   class="hero-main-img" 
+                   loading="eager"
+                   onerror="handleNanoImageFallback(this, 'public/images/hero-acai-desktop.webp', 'assets/img/hero-acai-bowl.jpg', 'Hero Açaí')">
+            </picture>
+            <div class="hero-image-overlay" aria-hidden="true"></div>
+            
+            <div class="hero-floating-badge">
+              <span class="sparkle-icon" aria-hidden="true">✦</span>
+              <span>Tigela Vulcão Especial</span>
+            </div>
+
+            <div class="hero-image-caption">
+              <strong>Açaí Artesanal com Frutas Nobres</strong>
+              <span>Morangos frescos, banana fatiada, leite ninho e fios dourados de leite condensado</span>
+            </div>
+          </div>
+
+          <!-- Microcard flutuante de garantia térmica -->
+          <div class="hero-thermal-pill animate-float" aria-hidden="true">
+            <span class="thermal-icon">❄️</span>
+            <div>
+              <strong>Embalagem Térmica Blindada</strong>
+              <small>Chega geladinho e cremoso na sua porta</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Destaques da Experiência Gourmet -->
+    <section class="highlights-section" aria-label="Diferenciais da nossa qualidade">
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-item animate-on-scroll">
+            <div class="highlight-icon">🌴</div>
+            <h3>100% Puro do Pará</h3>
+            <p>Polpa de açaí de origem certificada, densa, sem aditivos pesados e com o verdadeiro sabor amazônico.</p>
+          </div>
+          <div class="highlight-item animate-on-scroll">
+            <div class="highlight-icon">✨</div>
+            <h3>Cremosidade Pura</h3>
+            <p>Batido na hora na consistência perfeita, aveludado e com zero cristais de gelo que alterem o sabor.</p>
+          </div>
+          <div class="highlight-item animate-on-scroll">
+            <div class="highlight-icon">🍓</div>
+            <h3>Frutas Cortadas na Hora</h3>
+            <p>Morangos, bananas, kiwis e uvas frescas selecionadas, higienizadas e preparadas no momento do pedido.</p>
+          </div>
+          <div class="highlight-item animate-on-scroll">
+            <div class="highlight-icon">🛵</div>
+            <h3>Entrega Rápida Térmica</h3>
+            <p>Embalagens com isolamento térmico reforçado para garantir que seu pedido chegue firme e impecável.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção do Personalizador Interativo ("Monte do Seu Jeito") -->
+    <section id="monte" class="customizer-section" aria-label="Personalizador de Açaí">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Faça Sua Combinação</span>
+          <h2 class="section-title">Monte Seu Açaí em Poucos Toques</h2>
+          <p class="section-desc">
+            Personalize seu copo ou tigela gourmet escolhendo os ingredientes favoritos. Cada detalhe é preparado com carinho e precisão.
+          </p>
+        </div>
+
+        <div class="customizer-layout">
+          <!-- Coluna Principal com os Passos de Escolha -->
+          <div class="customizer-steps-container">
+            <!-- Passo 1: Tamanho & Apresentação -->
+            <div class="step-block animate-on-scroll">
+              <div class="step-title">
+                <span class="step-number" aria-hidden="true">1</span>
+                <h3>Escolha o Tamanho &amp; Apresentação</h3>
+              </div>
+              <div class="sizes-grid" id="sizesContainer" role="radiogroup" aria-label="Selecione o tamanho">
+                <!-- Renderizado dinamicamente via app.js -->
+              </div>
+            </div>
+
+            <!-- Passo 2: Base do Açaí -->
+            <div class="step-block animate-on-scroll">
+              <div class="step-title">
+                <span class="step-number" aria-hidden="true">2</span>
+                <h3>Escolha a Base</h3>
+              </div>
+              <div class="bases-grid" id="basesContainer">
+                <!-- Renderizado dinamicamente via app.js -->
+              </div>
+            </div>
+
+            <!-- Passo 3: Frutas Selecionadas -->
+            <div class="step-block animate-on-scroll">
+              <div class="step-title">
+                <span class="step-number" aria-hidden="true">3</span>
+                <h3>Frutas Frescas <span class="step-rule-hint" id="fruitsRuleHint">(2 grátis inclusas)</span></h3>
+              </div>
+              <div class="chips-grid" id="fruitsContainer">
+                <!-- Renderizado dinamicamente via app.js -->
+              </div>
+            </div>
+
+            <!-- Passo 4: Complementos & Crocâncias -->
+            <div class="step-block animate-on-scroll">
+              <div class="step-title">
+                <span class="step-number" aria-hidden="true">4</span>
+                <h3>Complementos &amp; Crocâncias <span class="step-rule-hint" id="toppingsRuleHint">(3 grátis inclusos)</span></h3>
+              </div>
+              <div class="chips-grid" id="toppingsContainer">
+                <!-- Renderizado dinamicamente via app.js -->
+              </div>
+            </div>
+
+            <!-- Passo 5: Coberturas & Caldas Líquidas -->
+            <div class="step-block animate-on-scroll">
+              <div class="step-title">
+                <span class="step-number" aria-hidden="true">5</span>
+                <h3>Caldas &amp; Coberturas <span class="step-rule-hint" id="syrupsRuleHint">(1 grátis inclusa)</span></h3>
+              </div>
+              <div class="chips-grid" id="syrupsContainer">
+                <!-- Renderizado dinamicamente via app.js -->
+              </div>
+            </div>
+
+            <!-- Passo 6: Turbinados Especiais Premium -->
+            <div class="step-block animate-on-scroll">
+              <div class="step-title">
+                <span class="step-number" aria-hidden="true">6</span>
+                <h3>Turbine com Especiais Premium <span class="step-rule-hint">Opcional</span></h3>
+              </div>
+              <div class="turbinados-list" id="turbinadosContainer">
+                <!-- Renderizado dinamicamente via app.js -->
+              </div>
+            </div>
+
+            <!-- Passo 7: Observações do Cliente -->
+            <div class="step-block animate-on-scroll" style="border-bottom: none; margin-bottom: 0;">
+              <div class="step-title">
+                <span class="step-number" aria-hidden="true">7</span>
+                <h3>Observações Especiais</h3>
+              </div>
+              <input type="text" 
+                     id="customNotesInput" 
+                     class="form-field" 
+                     placeholder="Ex: Caprichar no leite ninho, calda no fundo do copo, etc." 
+                     maxlength="140"
+                     aria-label="Observações especiais sobre a montagem do açaí">
+            </div>
+          </div>
+
+          <!-- Coluna Lateral Fixa / Painel de Resumo & Adição ao Pedido -->
+          <aside class="customizer-preview-sidebar animate-on-scroll" aria-label="Resumo do item montado">
+            <div class="customizer-preview-card">
+              <div class="preview-card-image-wrap">
+                <img src="public/images/bowl-personalizador.webp" 
+                     id="customizerPreviewImg" 
+                     alt="Visualização do seu açaí personalizado" 
+                     class="preview-card-img"
+                     onerror="handleNanoImageFallback(this, 'public/images/bowl-personalizador.webp', 'assets/img/hero-acai-bowl.jpg', 'Preview Açaí')">
+                <span class="preview-badge">Combinação Ao Vivo</span>
+              </div>
+
+              <div class="preview-card-body">
+                <div class="customizer-price-tag">Valor deste item:</div>
+                <div class="customizer-price-val" id="customizerTotalPrice" aria-live="polite">R$ 22,90</div>
+                
+                <div class="customizer-summary-box" id="customizerSummaryText" aria-live="polite">
+                  <!-- Atualizado dinamicamente via app.js -->
+                </div>
+
+                <button type="button" class="btn-add-custom-cart cta-shine" onclick="addCustomAcaiToCart()">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  <span>Adicionar ao Meu Pedido</span>
+                </button>
+
+                <p class="preview-delivery-note">
+                  🛵 Entrega rápida em até 40 min • Frete Grátis acima de R$ 45,00
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Combos Prontos e Tigelas do Chefe -->
+    <section id="combos" class="combos-section" aria-label="Combos Prontos">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Receitas Favoritas</span>
+          <h2 class="section-title">Tigelas Clássicas do Chefe</h2>
+          <p class="section-desc">
+            Quer pedir em um clique? Nossos mestres açaiteros criaram as receitas mais aclamadas pelos clientes, prontas para ir direto ao seu carrinho.
+          </p>
+        </div>
+
+        <div class="products-grid" id="combosGrid">
+          <!-- Renderizado dinamicamente via app.js com imagens WebP Nano Banana -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Ingredientes Selecionados do Nano Banana -->
+    <section id="ingredientes" class="ingredients-section" aria-label="Ingredientes Selecionados">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Frescor &amp; Origem Nobre</span>
+          <h2 class="section-title">Nossos Ingredientes Selecionados</h2>
+          <p class="section-desc">
+            Cada acompanhamento é escolhido com rigor de qualidade, higiene e frescor absoluto para proporcionar uma experiência inesquecível.
+          </p>
+        </div>
+
+        <div class="ingredients-grid" id="ingredientsGrid">
+          <!-- Renderizado dinamicamente via app.js com imagens public/images/ingredientes/*.webp -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Bebidas Refrescantes -->
+    <section id="bebidas" class="drinks-section" aria-label="Bebidas">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Para Acompanhar</span>
+          <h2 class="section-title">Bebidas &amp; Sucos Gelados</h2>
+          <p class="section-desc">Águas minerais, sucos naturais e refrigerantes bem geladinhos para completar o seu pedido.</p>
+        </div>
+
+        <div class="drinks-grid" id="drinksGrid">
+          <!-- Renderizado dinamicamente via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Fotográfico Institucional / Garantia de Sabor e Entrega -->
+    <section class="trust-banner-section" aria-label="Garantia de Qualidade">
+      <div class="container">
+        <div class="trust-banner-card animate-on-scroll">
+          <img src="public/images/banner-rodape.webp" 
+               alt="Açaí Tropical Gourmet - Qualidade e Frescor" 
+               class="trust-banner-bg" 
+               loading="lazy"
+               onerror="handleNanoImageFallback(this, 'public/images/banner-rodape.webp', 'assets/img/hero-acai-bowl.jpg', 'Banner Rodapé')">
+          <div class="trust-banner-overlay" aria-hidden="true"></div>
+          <div class="trust-banner-content">
+            <span class="trust-tag">Tradição &amp; Qualidade</span>
+            <h2>O Verdadeiro Açaí Tropical Direto na Sua Casa</h2>
+            <p>Mais de 5.000 clientes apaixonados pela nossa consistência e rapidez. Peça agora e receba em até 40 minutos com atendimento personalizado no WhatsApp.</p>
+            <div class="trust-cta-row">
+              <a href="#monte" class="btn-primary">
+                <span>🍧 Montar Meu Açaí</span>
+              </a>
+              <button type="button" class="btn-secondary" onclick="openCartDrawer()">
+                <span>Ver Meu Pedido</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Drawer Lateral do Carrinho (Modal de Checkout) -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCartDrawer()" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de Compras e Finalização de Pedido" role="dialog" aria-modal="true">
+    <div class="cart-header">
+      <h3>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <span>Seu Pedido</span>
+      </h3>
+      <button type="button" class="btn-close-cart" onclick="closeCartDrawer()" aria-label="Fechar carrinho">&times;</button>
+    </div>
+
+    <!-- Lista de Itens no Carrinho -->
+    <div class="cart-body">
+      <div class="cart-empty-state" id="cartEmptyState">
+        <div class="empty-icon" aria-hidden="true">🍧</div>
+        <h4>Seu carrinho está vazio</h4>
+        <p>Escolha um dos tamanhos no personalizador ou uma de nossas tigelas prontas para começar seu pedido!</p>
+        <button type="button" class="btn-primary" onclick="closeCartDrawer(); window.location.href='#monte';" style="margin-top: 16px;">
+          <span>Explorar Cardápio</span>
+        </button>
+      </div>
+      <div id="cartItemsContainer"></div>
+    </div>
+
+    <!-- Rodapé do Carrinho com Dados de Entrega e Checkout WhatsApp -->
+    <div class="cart-footer" id="cartFooterContainer" style="display: none;">
+      <div class="checkout-inputs-group">
+        <!-- Alternador Entrega / Retirada -->
+        <div class="delivery-options-toggle" role="radiogroup" aria-label="Forma de recebimento">
+          <label class="delivery-toggle-label">
+            <input type="radio" name="deliveryOption" value="delivery" checked>
+            <span>🛵 Entrega Delivery</span>
+          </label>
+          <label class="delivery-toggle-label">
+            <input type="radio" name="deliveryOption" value="pickup">
+            <span>🏬 Retirar no Balcão</span>
+          </label>
+        </div>
+
+        <input type="text" id="customerNameInput" class="form-field" placeholder="Seu Nome Completo *" required aria-label="Nome completo para identificação">
+        
+        <div id="addressInputBox">
+          <input type="text" id="customerAddressInput" class="form-field" placeholder="Endereço de Entrega (Rua, Nº, Bairro, Apto) *" required aria-label="Endereço de entrega">
+        </div>
+
+        <select id="customerPaymentSelect" class="form-field" aria-label="Forma de pagamento">
+          <option value="Pix">Pagamento via Pix (Chave enviada no WhatsApp)</option>
+          <option value="Cartão de Crédito/Débito na Entrega">Cartão de Crédito/Débito (Máquina na Entrega)</option>
+          <option value="Dinheiro">Dinheiro (Informar troco se necessário)</option>
+        </select>
+      </div>
+
+      <!-- Totais Monetários -->
+      <div class="totals-breakdown">
+        <div class="totals-row">
+          <span>Subtotal dos itens:</span>
+          <span id="cartSubtotalText">R$ 0,00</span>
+        </div>
+        <div class="totals-row">
+          <span>Taxa de entrega:</span>
+          <span id="cartDeliveryFeeText">R$ 5,00</span>
+        </div>
+        <div class="grand-total-row">
+          <span>Total a Pagar:</span>
+          <span id="cartTotalText">R$ 0,00</span>
+        </div>
+      </div>
+
+      <!-- Botão de Finalização Oficial no WhatsApp -->
+      <button type="button" class="btn-finalize-order cta-shine" onclick="finalizeWhatsAppOrder()">
+        <svg viewBox="0 0 448 512" aria-hidden="true">
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        <span>Enviar Pedido no WhatsApp</span>
+      </button>
+      <p class="whatsapp-disclaimer">
+        O pedido será gerado pronto e enviado diretamente para a conversa oficial da loja.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Botão Flutuante Oficial do WhatsApp (Atendimento Direto: (14) 99698-8997) -->
+  <a href="https://wa.me/5514996988997?text=Ol%C3%A1%21+Gostaria+de+fazer+um+pedido+no+A%C3%A7a%C3%AD+Tropical+Gourmet" 
+     class="floating-whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Fazer pedido pelo WhatsApp no número (14) 99698-8997">
+    <div class="whatsapp-btn-pulse" aria-hidden="true"></div>
+    <div class="whatsapp-btn-icon">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true">
+        <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.477-.15-.678.15-.201.3-.778.978-.954 1.179-.176.2-.351.226-.652.075-1.786-.894-2.955-1.597-4.135-3.626-.312-.537.312-.498.893-1.66.099-.2.05-.376-.025-.526-.075-.15-.678-1.632-.929-2.235-.245-.588-.493-.508-.678-.518-.176-.008-.376-.01-.577-.01s-.527.075-.803.376c-.276.3-1.054 1.03-1.054 2.511 0 1.482 1.079 2.912 1.23 3.113.15.2 2.124 3.243 5.146 4.549 1.905.824 2.651.903 3.606.762.613-.09 1.78-.727 2.031-1.431.251-.703.251-1.306.176-1.431-.075-.125-.276-.2-.577-.35zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.981-1.394C8.423 21.498 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.637 0-3.155-.472-4.437-1.286l-.318-.202-3.292.922.924-3.21-.21-.334C3.805 14.773 3.3 13.432 3.3 12c0-4.797 3.903-8.7 8.7-8.7 4.797 0 8.7 3.903 8.7 8.7 0 4.797-3.903 8.7-8.7 8.7z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-btn-tooltip">
+      <strong>Peça no WhatsApp</strong>
+      <small>(14) 99698-8997</small>
+    </span>
+  </a>
+
+  <!-- Rodapé Institucional Completo -->
+  <footer id="contato">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <a href="#" class="footer-logo-link" aria-label="Açaí Tropical Gourmet">
+          <!-- Logotipo Oficial em SVG Inline de Alta Fidelidade -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" class="footer-logo-svg" role="img" aria-label="Açaí Tropical Gourmet">
+            <defs>
+              <linearGradient id="purpleGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#a855f7"/>
+                <stop offset="50%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#4c1d95"/>
+              </linearGradient>
+              <linearGradient id="berryGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f43f5e"/>
+                <stop offset="100%" stop-color="#be123c"/>
+              </linearGradient>
+              <linearGradient id="goldGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fde047"/>
+                <stop offset="100%" stop-color="#eab308"/>
+              </linearGradient>
+              <filter id="glowFooter" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+              </filter>
+            </defs>
+            <g transform="translate(10, 10)">
+              <path d="M 12 45 Q 40 85 68 45 Z" fill="url(#purpleGradFooter)" stroke="#c084fc" stroke-width="2"/>
+              <ellipse cx="40" cy="45" rx="28" ry="10" fill="#2e1065"/>
+              <ellipse cx="40" cy="44" rx="24" ry="7" fill="url(#purpleGradFooter)"/>
+              <circle cx="32" cy="40" r="7" fill="#3b0764" stroke="#a855f7" stroke-width="1.5"/>
+              <circle cx="48" cy="41" r="6" fill="#4a044e" stroke="#f43f5e" stroke-width="1.5"/>
+              <circle cx="41" cy="34" r="5.5" fill="url(#berryGradFooter)"/>
+              <path d="M 40 28 C 45 15, 62 10, 70 8 C 65 18, 55 24, 42 27 Z" fill="#10b981"/>
+              <path d="M 40 28 C 48 20, 60 18, 68 18" stroke="#34d399" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M 20 25 L 22 18 L 29 20 L 22 22 Z" fill="url(#goldGradFooter)" filter="url(#glowFooter)"/>
+              <circle cx="62" cy="48" r="2.5" fill="#fde047"/>
+            </g>
+            <text x="100" y="52" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="34" fill="#ffffff" letter-spacing="-0.5">
+              AÇAÍ <tspan fill="url(#goldGradFooter)">TROPICAL</tspan>
+            </text>
+            <text x="102" y="76" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="12" fill="#c084fc" letter-spacing="3.5">
+              GOURMET &bull; 100% PURO DO PARÁ
+            </text>
+          </svg>
+        </a>
+        <p class="footer-tagline">O Açaí Mais Cremoso da Cidade • 100% Polpa Pura do Pará</p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>📍 Localização &amp; Entrega</h4>
+          <p>Asa Sul, Comércio Local • Brasília - DF</p>
+          <p>Entregas em até 8km de raio com embalagem térmica blindada.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>🕒 Horário de Atendimento</h4>
+          <p>Todos os dias: <strong>12h00 às 23h30</strong></p>
+          <p>Pedidos aceitos continuamente para entrega ou retirada.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>💬 Atendimento Direto</h4>
+          <p>WhatsApp: <strong>(14) 99698-8997</strong></p>
+          <p>Instagram: <strong><a href="https://instagram.com/vexawebb" target="_blank" rel="noopener" style="color: var(--primary-light);">@vexawebb</a></strong></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 Açaí Tropical Gourmet. Todos os direitos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
