@@ -9,11 +9,12 @@ const STORE_CONFIG = {
   tagline: "O Açaí Mais Cremoso da Cidade • 100% Polpa Pura do Pará",
   description: "Açaí artesanal batido na hora, textura aveludada sem cristais de gelo e mais de 25 acompanhamentos premium.",
   
-  // Contato e Delivery Oficial
-  whatsapp: "5514996988997",
-  whatsappFormatted: "(14) 99698-8997",
-  instagram: "@vexawebb",
-  instagramUrl: "https://instagram.com/vexawebb",
+  // Contato e Delivery Oficial (Configure aqui o WhatsApp da sua loja)
+  // Formato: DDI + DDD + Número sem espaços nem caracteres especiais (Ex: 5511999999999)
+  whatsapp: "5500000000000",
+  whatsappFormatted: "(00) 00000-0000",
+  instagram: "@seuacai",
+  instagramUrl: "https://instagram.com/",
   
   // Localização e Operação
   address: "Asa Sul, Comércio Local • Brasília - DF",
@@ -25,8 +26,8 @@ const STORE_CONFIG = {
   deliveryFee: 5.00,
   freeDeliveryThreshold: 45.00,
   minOrderValue: 15.00,
-  pixKey: "vexawebb@gmail.com",
-  pixBeneficiary: "Vexa Açaí Gourmet",
+  pixKey: "contato@sualoja.com",
+  pixBeneficiary: "Açaí Tropical Gourmet",
   
   // Status da Loja
   isOpen: true,

@@ -200,7 +200,36 @@ document.addEventListener("DOMContentLoaded", () => {
   setupScrollAnimations();
   setupStickyHeader();
   setupHeroVideo();
+  setupWhatsAppLinks();
 });
+
+// Configuração Dinâmica dos Links e Telefones Oficiais via STORE_CONFIG
+function setupWhatsAppLinks() {
+  if (typeof STORE_CONFIG === 'undefined') return;
+
+  const floatingBtn = document.getElementById("floatingWhatsappBtn");
+  if (floatingBtn) {
+    const defaultMsg = encodeURIComponent(`Olá! Gostaria de fazer um pedido no ${STORE_CONFIG.name}`);
+    floatingBtn.href = `https://wa.me/${STORE_CONFIG.whatsapp}?text=${defaultMsg}`;
+    floatingBtn.setAttribute("aria-label", `Fazer pedido pelo WhatsApp no número ${STORE_CONFIG.whatsappFormatted}`);
+  }
+
+  const floatingNumber = document.getElementById("floatingWhatsappNumber");
+  if (floatingNumber) {
+    floatingNumber.textContent = STORE_CONFIG.whatsappFormatted;
+  }
+
+  const footerNumber = document.getElementById("footerWhatsappNumber");
+  if (footerNumber) {
+    footerNumber.textContent = STORE_CONFIG.whatsappFormatted;
+  }
+
+  const footerInsta = document.getElementById("footerInstagramLink");
+  if (footerInsta) {
+    footerInsta.textContent = STORE_CONFIG.instagram;
+    footerInsta.href = STORE_CONFIG.instagramUrl || "https://instagram.com/";
+  }
+}
 
 // Otimização e Controle do Vídeo Hero em Loop (Efeito GIF Suave)
 function setupHeroVideo() {
